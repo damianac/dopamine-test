@@ -1,0 +1,25 @@
+body {
+  .bv-example-row {
+    div {
+      &:first-child {
+        cursor: pointer;
+        display: block;
+        background-color: blueviolet;
+        text-align: center;
+        color: white;
+      }
+      &.notification {
+        margin-top: 10px;
+        -webkit-box-shadow: 3px 3px 5px 0px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow:    3px 3px 5px 0px #ccc;  /* Firefox 3.5 - 3.6 */
+        box-shadow:         3px 3px 5px 0px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+      }
+    }
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+}
